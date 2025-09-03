@@ -22,7 +22,7 @@ namespace eCommerce.Core.Validators
                 .NotEmpty().WithMessage("Password is required");
 
             RuleFor(temp => temp.PersonName)
-                .NotEmpty().WithMessage("Person name is required");
+                .NotEmpty().WithMessage("PersonName is required");
 
             RuleFor(temp => temp.Gender)
                 .IsInEnum().WithMessage("Gender must be a valid enum value.");
